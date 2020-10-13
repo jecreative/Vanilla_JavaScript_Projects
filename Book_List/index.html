@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
+    />
+    <style>
+      .success,
+      .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+
+      .success {
+        background: green;
+      }
+
+      .error {
+        background: red;
+      }
+    </style>
+    <title>OOP Book List</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-danger navbar-dark py-2">
+      <div class="container px-5">
+        <a href="/index.html" class="navbar-brand text-gray"
+          >Projects Dashboard</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+              >
+                Projects
+              </a>
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  href="/DOM_Projects/Task_List/index.html"
+                  >Todo List</a
+                >
+                <a class="dropdown-item" href="./index.html">Book Tracker</a>
+                <a
+                  class="dropdown-item"
+                  href="/DOM_Projects/Loan_Calculator/index.html"
+                  >Loan Calculator</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/API_Projects/Weather_JS/index.html"
+                  >Weather App</a
+                >
+                <a class="dropdown-item" href="./index.html">GitHub Finder</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h1 class="text-center text-danger">Book List</h1>
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control mb-3" id="title" />
+
+          <div>
+            <label for="author">Author</label>
+            <input type="text" class="form-control mb-3" id="author" />
+          </div>
+          <div>
+            <label for="isbn">ISBN#</label>
+            <input type="text" class="form-control mb-3" id="isbn" />
+          </div>
+          <div>
+            <input type="submit" value="Submit" class="form-control mt-5" />
+          </div>
+        </div>
+      </form>
+
+      <br /><br />
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="appes6.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt"
+      crossorigin="anonymous"
+    />
+    <title>Task List</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-2">
+      <div class="container px-5">
+        <a href="/index.html" class="navbar-brand text-gray"
+          >Projects Dashboard</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+              >
+                Projects
+              </a>
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  href="/DOM_Projects/Task_List/index.html"
+                  >Todo List</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/DOM_Projects/OOP_Book_List/index.html"
+                  >Book Tracker</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/DOM_Projects/Loan_Calculator/index.html"
+                  >Loan Calculator</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/API_Projects/Weather_JS/index.html"
+                  >Weather App</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/API_Projects/Github_Finder/index.html"
+                  >GitHub Finder</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col p-5">
+          <h1 class="display-4 text-center">Task List</h1>
+          <div id="main" class="card">
+            <div class="card-body">
+              <span class="card-title h3">Enter a task...</span>
+              <br />
+              <br />
+              <form id="task-form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <label class="sr-only" for="inlineFormInputGroupTask"
+                      >Task</label
+                    >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">New Task</div>
+                    </div>
+                    <input
+                      type="text"
+                      name="task"
+                      id="inlineFormInputGroupTask"
+                      class="form-control form-control-lg task"
+                    />
+                  </div>
+                </div>
+                <input
+                  type="submit"
+                  value="Add Task"
+                  class="btn btn-primary btn-block mt-3"
+                />
+              </form>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <div class="input-group">
+                  <label class="sr-only" for="inlineFormInputGroupFilter"
+                    >Filter Tasks</label
+                  >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">Filter Tasks</div>
+                  </div>
+
+                  <input
+                    type="text"
+                    name="filter"
+                    id="inlineFormInputGroupFilter"
+                    class="form-control form-control-lg filter"
+                  />
+                </div>
+              </div>
+
+              <ul class="collection list-unstyled list-group text-center"></ul>
+
+              <a href="#" class="clear-tasks btn btn-dark btn-block black"
+                >Clear Tasks</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
