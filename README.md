@@ -1,4 +1,4 @@
-# Vanilla_JavaScript_Projects
+# Vanilla JavaScript Projects
 A series of vanilla javascript projects build following tutorials by both Brad Traversy and DevelopedByEd.
 
 Links to courses:
